@@ -9,6 +9,7 @@ class Greetings{
 interface iDidSomething{
     Worked():string;
 }
+
 class SpecialGreetings extends Greetings
 {
     constructor()

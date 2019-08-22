@@ -3,6 +3,10 @@ interface iOperations{
 }
 class Person implements iOperations
 {
+    constructor()
+    {
+        this.name=name;
+    }
     protected salary;
     public name:String="akhila";
     public age:number=20;
@@ -26,6 +30,9 @@ class Employee extends Person
     public getSalary()
     {
         return this.salary;
+    }
+    greeting():string{
+        return "Hi" + this.name;
     }
 }
 var p = new Person();

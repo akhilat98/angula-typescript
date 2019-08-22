@@ -15,6 +15,7 @@ var Person = /** @class */ (function () {
     function Person() {
         this.name = "akhila";
         this.age = 20;
+        this.name = name;
     }
     Person.prototype.getName = function () {
         return this.name;
@@ -37,6 +38,9 @@ var Employee = /** @class */ (function (_super) {
     };
     Employee.prototype.getSalary = function () {
         return this.salary;
+    };
+    Employee.prototype.greeting = function () {
+        return "Hi" + this.name;
     };
     Employee.sProperty = "static";
     return Employee;
