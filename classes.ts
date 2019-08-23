@@ -1,4 +1,4 @@
-class Greetings{
+export class Greetings{
     public strProp:string;
     private numProp:number;
     protected safeProp:any;
@@ -10,7 +10,7 @@ interface iDidSomething{
     Worked():string;
 }
 
-class SpecialGreetings extends Greetings
+export class SpecialGreetings extends Greetings
 {
     constructor()
     {

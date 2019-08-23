@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -11,11 +12,11 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+exports.__esModule = true;
 var Person = /** @class */ (function () {
     function Person() {
         this.name = "akhila";
         this.age = 20;
-        this.name = name;
     }
     Person.prototype.getName = function () {
         return this.name;
@@ -25,6 +26,7 @@ var Person = /** @class */ (function () {
     };
     return Person;
 }());
+exports.Person = Person;
 var Employee = /** @class */ (function (_super) {
     __extends(Employee, _super);
     function Employee() {
@@ -45,16 +47,20 @@ var Employee = /** @class */ (function (_super) {
     Employee.sProperty = "static";
     return Employee;
 }(Person));
-var p = new Person();
-console.log(p.name);
-console.log(p.age);
-console.log(p.getName());
-console.log(p.greeting());
-var e = new Employee();
-console.log(e.name);
-console.log(e.age);
-console.log(e.designation);
-console.log(e.getDesignation());
-console.log(e.greeting());
-console.log(Employee.sProperty);
-console.log(e.getSalary());
+exports.Employee = Employee;
+function sample() {
+}
+exports.sample = sample;
+// var p = new Person();
+// console.log(p.name);
+// console.log(p.age);
+// console.log(p.getName());
+// console.log(p.greeting());
+// var e = new Employee();
+// console.log(e.name);
+// console.log(e.age);
+// console.log(e.designation);
+// console.log(e.getDesignation());
+// console.log(e.greeting());
+// console.log(Employee.sProperty);
+// console.log(e.getSalary());
